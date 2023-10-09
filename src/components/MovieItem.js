@@ -9,6 +9,7 @@ import {
 import { Link } from "react-router-dom";
 
 function MovieItem({ title, id, releaseDate, posterUrl }) {
+  // console.log(id);
   return (
     <Card
       sx={{

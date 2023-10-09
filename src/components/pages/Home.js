@@ -11,6 +11,7 @@ function Home() {
       .then((data) => setMovies(data.movies))
       .catch((err) => console.log(err));
   }, []);
+  // console.log(movies);
   return (
     <Box width={"100%"} height={"100%"} margin="auto" marginTop={2}>
       <Box margin="auto" width={"80%"} height={"60vh"} padding={2}>
@@ -39,7 +40,7 @@ function Home() {
             .slice(0, 5)
             .map((movie, index) => (
               <MovieItem
-                id={movie.id}
+                id={movie._id}
                 posterUrl={movie.posterUrl}
                 title={movie.title}
                 releaseDate={movie.releaseDate}

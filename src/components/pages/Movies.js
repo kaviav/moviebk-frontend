@@ -10,6 +10,7 @@ function Movies() {
       .then((data) => setMovies(data.movies))
       .catch((err) => console.log(err));
   }, []);
+  // console.log(movies);
   return (
     <Box margin={"auto"} sx={{ marginTop: 2 }}>
       <Typography
