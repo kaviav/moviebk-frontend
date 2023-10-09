@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { getMovieDetails, newBooking } from "../../api-helpers/api-helpers";
 import { Box, Button, FormLabel, TextField, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export const Booking = () => {
   const [movie, setMovie] = useState();
@@ -91,9 +92,11 @@ export const Booking = () => {
                     margin="normal"
                     variant="standard"
                   />
-                  <Button type="submit" sx={{ mt: 3 }}>
-                    Book Now
-                  </Button>
+                  <Link to="/userprof">
+                    <Button type="submit" sx={{ mt: 3 }}>
+                      Book Now
+                    </Button>
+                  </Link>
                 </Box>
               </form>
             </Box>
