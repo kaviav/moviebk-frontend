@@ -23,7 +23,7 @@ function MovieItem({ title, id, releaseDate, posterUrl }) {
       }}
     >
       <CardMedia
-        sx={{ height: 140 }}
+        sx={{ height: 180 }}
         image={`${posterUrl}`}
         title="green iguana"
       />

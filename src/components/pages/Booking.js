@@ -92,11 +92,11 @@ export const Booking = () => {
                     margin="normal"
                     variant="standard"
                   />
-                  <Link to="/userprof">
-                    <Button type="submit" sx={{ mt: 3 }}>
-                      Book Now
-                    </Button>
-                  </Link>
+                  {/* <Link to="/"> */}
+                  <Button type="submit" sx={{ mt: 3 }}>
+                    Book Now
+                  </Button>
+                  {/* </Link> */}
                 </Box>
               </form>
             </Box>
